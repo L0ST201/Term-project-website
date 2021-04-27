@@ -1,0 +1,313 @@
+/*
+  Benjamin Armour
+  Fundamentals of Web Development
+
+  Semester Project
+  Style.css (Style rules for site)
+*/
+
+
+/* Clear Css default atributes*/
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+/*header*/
+
+.header {
+	width: 100%;
+	height: 80px;
+	display: block;
+}
+
+.inner-header {
+	width: 100vw;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	background-color: #18181a;
+}
+
+.inner-header li a {
+	text-decoration: none;
+	color: white;
+}
+
+.inner-header li a:hover {
+	text-decoration: none;
+	color: #a3d2ca;
+}
+
+.logo-container {
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.logo-container h1 {
+	color: white;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: "Montserrat";
+	font-size: 32px;
+	font-weight: 200;
+}
+
+.logo-container h1 span {
+	font-weight: 800;
+}
+
+.navigation {
+	float: right;
+	height: 100%;
+}
+
+.navigation li {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 15px;
+	color: white;
+}
+
+.navigation li:last-child {
+	padding-right: 0;
+}
+
+.navigation li a {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	color: white;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 100;
+}
+
+@media (max-width: 700px) {
+	.logo-container {
+		display: none;
+	}
+}
+
+
+/*Body attributes for Home, About, and (Resume&Education)*/
+
+
+/*Footer attribuets for all pages*/
+
+iframe {
+	border: none;
+}
+
+body {
+	background-image: url("Background 2/BG-1.png"), url("Background 2/BG-2.png");
+	background-repeat: repeat-x, repeat;
+	color: #18181a;
+	font-size: 1em;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Right-SelfPort {
+	width: 15%;
+	height: auto;
+	float: right;
+	top: 50%;
+	left: 50%;
+	margin-top: 70px;
+	margin-bottom: 150px;
+	border-radius: 50%;
+	border: 5px solid #18181a;
+}
+
+@media (max-width: 700px) {
+	img {
+		display: none;
+	}
+}
+
+.SelfPort-padding {
+	padding-right: 20px;
+}
+
+.pagehead-heading,
+.pagehead-intro {
+	text-align: center;
+}
+
+.pagehead {
+	padding: 32px 0;
+	border-bottom: solid .12em black;
+}
+
+.pagehead-intro {
+	margin-bottom: 0.1em;
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 2em;
+}
+
+.pagehead-heading {
+	color: black;
+	margin-top: -0.2em;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: bold;
+	font-size: 6em;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+	max-width: 60em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+.introduction-section>p,
+.location-section>p,
+.questions-section {
+	font-weight: 300;
+	letter-spacing: 0.05em;
+}
+
+@media (max-width: 1000px) {
+	.introduction-section,
+	.location-section,
+	.questions-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.questions-section>h3 {
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1em 0 0 0;
+}
+
+section>h2 {
+	margin-top: 1em;
+	margin: 1em 0 0 0;
+}
+
+.pagehead-intro {
+	margin-bottom: 0.1em;
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 2em;
+}
+
+.pagehead-heading {
+	margin-top: -0.2em;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: bold;
+	font-size: 6em;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 2.2em;
+	font-weight: 200;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 1.2em;
+	font-weight: 200;
+}
+
+.list li::before {
+	content: "•";
+	color: #18181a;
+	display: inline-block;
+	width: 1em;
+	margin-left: 1em;
+}
+
+.list li {
+	font-size: 1em;
+	color: #18181a;
+	font-size: 1em;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+}
+
+#table-right {
+	float: right;
+	width: 45%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	font-family: "Gentium Book Basic", Georgia, serif;
+	text-align: center;
+}
+
+.footer {
+	margin-top: 20px;
+	padding: 20px 0;
+	text-align: center;
+	background-color: #18181a;
+	text-decoration: none;
+}
+
+.social>li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.footer p {
+	font-family: 'Montserrat';
+	color: white;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: White;
+}
+
+.footer {
+	text-align: center;
+}
+
+.footer>p {
+	/* Typography Declarations */
+	font-weight: 300;
+	letter-spacing: 0.05em;
+}
+
+.home-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+	.pagehead {
+		padding: 3em 0;
+	}
+	.pagehead-heading {
+		font-size: 3em;
+	}
+	.footer {
+		padding: 2em 2.5em;
+	}
+}
